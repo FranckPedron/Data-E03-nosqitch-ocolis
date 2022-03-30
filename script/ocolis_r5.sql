@@ -1,7 +1,7 @@
 BEGIN;
 
-alter table package add request_time timestamp with time zone default now();
-alter table package add expedition_time timestamp with time zone default null;
-alter table package add delivered_time timestamp with time zone default null;
+ALTER TABLE package ADD request_time TIMESTAMPTZ NOT NULL DEFAULT now();
+ALTER TABLE package ADD expedition_time TIMESTAMPTZ;
+ALTER TABLE package ADD delivered_time TIMESTAMPTZ;
 
 COMMIT;

@@ -1,5 +1,5 @@
 BEGIN;
 
-alter table "package" add unique(serial_number);
-
+ALTER TABLE package ADD UNIQUE(serial_number);
+ 
 COMMIT;

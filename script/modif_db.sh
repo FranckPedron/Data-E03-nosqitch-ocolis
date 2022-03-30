@@ -1,7 +1,8 @@
-export PGUSER=ocolis_admin
-export PGPASSWORD=ocolis
+export PGUSER=postgres
+export PGPASSWORD=js4life
+export PGDATABASE=ocolis
 
-psql -d ocolis -f ocolis_r2.sql
-psql -d ocolis -f ocolis_r3.sql
-psql -d ocolis -f ocolis_r4.sql
-psql -d ocolis -f ocolis_r5.sql
+psql -f ocolis_r2.sql
+psql -f ocolis_r3.sql
+psql -f ocolis_r4.sql
+psql -f ocolis_r5.sql
